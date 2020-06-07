@@ -1,7 +1,6 @@
 /* Global Variables */
-const API_KEY_WEATHER = "dbbb0c655264a1d3b866654be07c3178";
-const URL_WEATHER =
-  "https://api.openweathermap.org/data/2.5/weather?units=metric";
+const API_KEY_WEATHER = "dbbb0c655264a1d3b866654be07c3178&units=imperial";
+const URL_WEATHER = "https://api.openweathermap.org/data/2.5/weather?";
 const countryCode = "de";
 
 const serverBaseUrl = "http://localhost:8000";
@@ -14,7 +13,7 @@ const weatherAction = async (e) => {
   let zipCode = document.getElementById("zip").value;
   const fullUrl =
     URL_WEATHER +
-    "&zip=" +
+    "zip=" +
     zipCode +
     "," +
     countryCode +
